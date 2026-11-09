@@ -1,0 +1,10 @@
+FROM apache/airflow:2.9.3-python3.11
+
+USER airflow
+COPY requirements.txt /requirements.txt
+COPY docker/wheels /wheels
+RUN if ls /wheels/*.whl >/dev/null 2>&1; then \
+      pip install --no-cache-dir --no-index --find-links=/wheels -r /requirements.txt; \
+    else \
+      pip install --no-cache-dir -r /requirements.txt; \
+    fi

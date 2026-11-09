@@ -1,0 +1,32 @@
+{
+  "etl": {
+    "start_date": "2023-06-01",
+    "end_date": "2027-03-31",
+    "rows_read": 50000,
+    "rows_quarantine": 42,
+    "rows_loaded": 49958
+  },
+  "mart": {
+    "rows": 43808,
+    "as_of": "2026-10-26"
+  },
+  "ml": {
+    "primary": {
+      "r2": 0.9209925409869453,
+      "mape_pct": 16.52054804474296,
+      "rmse": 53313.55020225707,
+      "mae": 28855.658770506117
+    },
+    "scoring": {
+      "scored_rows": 3066,
+      "test_rows": 2075,
+      "future_rows": 991
+    },
+    "train_rows": 4026,
+    "test_rows": 2075
+  },
+  "clickhouse": {
+    "route_card_rows": 43808,
+    "prediction_rows": 3066
+  }
+}

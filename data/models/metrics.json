@@ -1,0 +1,27 @@
+{
+  "train_rows": 4026,
+  "test_rows": 2075,
+  "train_window": "2026-07-26 inclusive .. 2026-10-05 exclusive",
+  "test_window": "2026-10-05 .. 2026-10-26 inclusive",
+  "models": {
+    "CatBoostRegressor": {
+      "r2": 0.9209925409869453,
+      "mape_pct": 16.52054804474296,
+      "rmse": 53313.55020225707,
+      "mae": 28855.658770506117
+    },
+    "Ridge": {
+      "r2": 0.8382052158184682,
+      "mape_pct": 48.67201365836607,
+      "rmse": 76293.19714767064,
+      "mae": 49309.41558149888
+    },
+    "DecisionTreeRegressor": {
+      "r2": 0.8634486958426905,
+      "mape_pct": 20.569433099823566,
+      "rmse": 70089.26124865981,
+      "mae": 37868.20385522067
+    }
+  },
+  "primary_model": "CatBoostRegressor"
+}
